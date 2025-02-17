@@ -1,3 +1,9 @@
+Integrantes do Grupo:
+Gabriel Eliezer
+Bruno Sakamoto
+Henrique Fernandez
+Rafael Rodrigues
+
 # Redes Industriais🔗🌐
 
    #### 🌐Redes industriais são sistemas de comunicação projetados para conectar e gerenciar dispositivos, sensores, atuadores e controladores em ambientes de automação industrial. Elas permitem a troca de dados e controle em tempo real entre equipamentos de diferentes fabricantes, garantindo a operação eficiente de processos industriais. As redes industriais são essenciais em setores como manufatura, energia, transporte e petroquímico, pois oferecem maior confiabilidade, segurança e desempenho, além de permitir a integração de sistemas como SCADA (Supervisory Control and Data Acquisition) e PLCs (Programmable Logic Controllers). Exemplos comuns de protocolos de comunicação em redes industriais incluem Modbus, Profibus, Ethernet/IP e PROFINET.🌐
@@ -5,7 +11,7 @@
 
 # Índice
 1. [Introdução](#introdução)
-2. [Redes Industriais Mais Usadas](#redes-industriais-mais-usadas)
+2. [Redes Industriais](#redes-industriais)
 3. [Aplicação e Requisitos](#redes-industriais-aplicação-e-requisitos)
 4. [Desafios nas Redes Industriais](#desafios-nas-redes-industriais)
 5. [Protocolos e Adequação](#protocolos-disponíveis-e-sua-adequação-para-diferentes-aplicações-industriais)
@@ -13,7 +19,7 @@
 7. [Escolha do Protocolo](#escolha-do-protocolo-considerações-para-o-setor)
 8. [Benefícios](#benefícios-esperados-de-uma-rede-industrial-bem-planejada)
 
-# Redes Industriais Mais Usadas
+# Redes Industriais
 
 As redes industriais são essenciais para a comunicação entre dispositivos em ambientes de automação, oferecendo alta confiabilidade, segurança e desempenho. Abaixo estão algumas das redes industriais mais comuns:
 
@@ -329,5 +335,42 @@ Uma rede industrial bem planejada é fundamental para garantir a **produtividade
 6. **AS-Interface**:
    - Funciona apenas em redes dedicadas para sensores e atuadores.
    - Não é compatível com Ethernet, RS-485 ou CAN.
+
+```mermaid
+graph TD
+    A[ERP] <--> B[MES]
+    B <--> C[SCADA]
+    C <--> D[CLPs]
+    D <--> E[Sensores e Atuadores]
+
+    B --> F[Gestão de Estoque Inteligente]
+    B --> G[Controle da Produção]
+    C --> H[Monitoramento de Máquinas]
+    C --> I[Qualidade e Inspeção]
+    F --> J[Sustentabilidade e Eficiência Energética]
+    G --> K[Manutenção Inteligente]
+    H --> L[Integração Industrial]
+    I --> M[Análise de Dados e IA]
+
+    %% Fluxo de Dados
+    A -->|Ordens de Produção| B
+    B -->|Instruções de Produção| C
+    C -->|Comandos de Controle| D
+    D -->|Execução de Comandos| E
+    E -->|Dados de Processo| D
+    D -->|Status de Máquinas| C
+    C -->|Dados em Tempo Real| B
+    B -->|Status de Produção| A
+
+    %% Módulos Específicos
+    F -->|Controle de Estoque| B
+    G -->|Otimização da Produção| B
+    H -->|Prevenção de Falhas| C
+    I -->|Controle de Qualidade| C
+    J -->|Monitoramento de Energia| F
+    K -->|Manutenção Preditiva| G
+    L -->|Integração de Protocolos| H
+    M -->|Análise de Dados| I
+```
 
 ---
