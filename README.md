@@ -1,7 +1,11 @@
 Integrantes do Grupo:
+
 Gabriel Eliezer
+
 Bruno Sakamoto
+
 Henrique Fernandez
+
 Rafael Rodrigues
 
 # Redes Industriais🔗🌐
